@@ -1,10 +1,14 @@
 {
   "name": "fastify-twitch-ebs-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fastify plugin that provides useful functions for Twitch Extension Backend Services (EBS)",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "tsc -w",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint --project tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -26,7 +30,7 @@
   "homepage": "https://github.com/lukemnet/fastify-twitch-ebs-tools#readme",
   "dependencies": {
     "fastify-plugin": "1.5.0",
-    "twitch-ebs-tools": "0.0.4"
+    "twitch-ebs-tools": "0.0.6"
   },
   "devDependencies": {
     "@types/jest": "24.0.11",
