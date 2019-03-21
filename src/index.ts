@@ -3,11 +3,11 @@ import fp from 'fastify-plugin';
 
 import TwitchEbsTools, {
   TwitchToken,
-  TwitchPayload,
   TwitchChannelId,
+  TwitchPayload,
   TwitchRole,
   TwitchRoles,
-} from '../../twitch-ebs-tools/src/index';
+} from 'twitch-ebs-tools';
 
 export interface PluginOptions {
   readonly secret: string;
