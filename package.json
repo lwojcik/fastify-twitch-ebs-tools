@@ -1,0 +1,45 @@
+{
+  "name": "fastify-twitch-ebs-tools",
+  "version": "0.0.1",
+  "description": "Fastify plugin that provides useful functions for Twitch Extension Backend Services (EBS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemnet/fastify-twitch-ebs-tools.git"
+  },
+  "keywords": [
+    "twitch",
+    "extension",
+    "backend",
+    "ebs",
+    "fastify",
+    "plugin"
+  ],
+  "author": "Łukasz Wójcik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukemnet/fastify-twitch-ebs-tools/issues"
+  },
+  "homepage": "https://github.com/lukemnet/fastify-twitch-ebs-tools#readme",
+  "dependencies": {
+    "fastify-plugin": "1.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.4",
+    "fastify": "2.1.0",
+    "jest": "24.5.0",
+    "prettier": "1.16.4",
+    "ts-jest": "24.0.0",
+    "tslint": "5.14.0",
+    "tslint-config-airbnb": "5.11.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-immutable": "5.5.0",
+    "tslint-plugin-prettier": "2.0.1",
+    "typescript": "3.3.4000"
+  }
+}
