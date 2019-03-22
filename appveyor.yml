@@ -18,7 +18,5 @@ test_script:
   - node --version
   - npm --version
   - npm run test
-  - npm run lint
-  - npm run build
 
 build: off

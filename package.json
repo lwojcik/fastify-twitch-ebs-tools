@@ -5,11 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest",
-    "dev": "tsc -w",
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint --project tsconfig.json"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
