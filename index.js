@@ -1,5 +1,5 @@
 const fp = require('fastify-plugin');
-const TwitchEbsTools = require('../twitch-ebs-tools');
+const TwitchEbsTools = require('twitch-ebs-tools');
 
 function fastifyTwitchEbs(fastify, options, next) {
   if (!options.secret) {
