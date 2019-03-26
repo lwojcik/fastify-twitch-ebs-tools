@@ -2,6 +2,7 @@ const fp = require('fastify-plugin');
 const TwitchEbsTools = require('twitch-ebs-tools');
 
 function fastifyTwitchEbs(fastify, options, next) {
+  /* istanbul ignore next */
   if (!options.secret) {
     throw new Error('Twitch EBS Tools: Missing JWT secret');
   }
@@ -11,6 +12,7 @@ function fastifyTwitchEbs(fastify, options, next) {
   } = options;
   const disabled = options.disabled || false;
 
+  /* istanbul ignore next - I don't know how to test this */
   function validateToken(token) {
     return new TwitchEbsTools(secret).validateToken(token);
   }

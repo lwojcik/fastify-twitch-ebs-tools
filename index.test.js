@@ -1,6 +1,7 @@
 const Fastify = require('fastify');
 const fastifyTwitchEbsTools = require('./index');
 const TwitchEbsTools = require('twitch-ebs-tools');
+const jwt = require('jsonwebtoken');
 
 describe('fastify-twitch-ebs-tools', () => {
   test('should register successfully', () => {
@@ -48,31 +49,25 @@ describe('fastify-twitch-ebs-tools', () => {
     expect(fastify.twitchEbs.verifyBroadcaster({})).toEqual(true);
     expect(fastify.twitchEbs.verifyViewerOrBroadcaster({})).toEqual(true);
     expect(fastify.twitchEbs.validatePermission({}, '123', 'role')).toEqual(true);
+    fastify.close();
   });
-
-  // test('should throw Error when no secret is provided', async () => {
-
-  //   expect(async () => {
-  //     const fastify = Fastify();
-  //     fastify.register(fastifyTwitchEbsTools, {});
-  //     await fastify.ready();
-  //   }).toThrow();
-
-    
-  // });
 
   test('methods should correspond to relevant methods of twitch-ebs-tools', async () => {
     const fastify = Fastify();
+    const sampleSecret = 'some secret';
+    const samplePayload = { foo: 'bar' };
+    const validToken = jwt.sign(samplePayload, Buffer.from(sampleSecret, 'base64'), {
+      noTimestamp: true,
+    });
 
     fastify.register(fastifyTwitchEbsTools, {
       disabled: false,
-      secret: 'some secret'
+      secret: sampleSecret,
     });
 
-
     await fastify.ready();
-    
-    // expect(fastify.twitchEbs.validateToken).toEqual(new TwitchEbsTools('some secret').validateToken);
+
+    expect(fastify.twitchEbs.validateToken(validToken)).toEqual(samplePayload);
     expect(fastify.twitchEbs.verifyChannelId({}, '123')).toEqual(TwitchEbsTools.verifyChannelId({}, '123'));
     expect(fastify.twitchEbs.verifyTokenNotExpired({})).toEqual(TwitchEbsTools.verifyTokenNotExpired({}));
     expect(fastify.twitchEbs.verifyRole({}, 'role')).toEqual(TwitchEbsTools.verifyRole({}, 'role'));
