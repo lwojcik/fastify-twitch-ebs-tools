@@ -59,7 +59,7 @@ fastify.listen(3000, (error) => {
 
 ## Usage
 
-All plugin methods are directly passed to relevant methods of `twitch-ebs-tools`. Refer to [`twitch-ebs-tools` documentation](https://github.com/lukemnet/twitch-ebs-tools/blob/master/README.md#basic-usage) to get more details.
+All plugin methods pass arguments to relevant methods of `twitch-ebs-tools`. Refer to [`twitch-ebs-tools` documentation](https://github.com/lukemnet/twitch-ebs-tools/blob/master/README.md#basic-usage) to get more details.
 
 Available methods:
 

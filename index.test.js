@@ -14,7 +14,7 @@ describe('fastify-twitch-ebs-tools', () => {
     }).not.toThrow();
   });
 
-  test('should expose all twitchEbs methods', () => {
+  test('should expose all twitchEbs methods', async () => {
     const fastify = Fastify();
 
     fastify.register(fastifyTwitchEbsTools, {
@@ -22,14 +22,14 @@ describe('fastify-twitch-ebs-tools', () => {
       secret: 'some secret'
     });
 
-    fastify.ready(function () {
-      expect(fastify.twitchEbs.validateToken).toBeDefined();
-      expect(fastify.twitchEbs.verifyChannelId).toBeDefined();
-      expect(fastify.twitchEbs.verifyTokenNotExpired).toBeDefined();
-      expect(fastify.twitchEbs.verifyRole).toBeDefined();
-      expect(fastify.twitchEbs.verifyChannelIdAndRole).toBeDefined();
-      expect(fastify.twitchEbs.verifyViewerOrBroadcaster).toBeDefined();
-    });
+    await fastify.ready();
+
+    expect(fastify.twitchEbs.validateToken).toBeDefined();
+    expect(fastify.twitchEbs.verifyChannelId).toBeDefined();
+    expect(fastify.twitchEbs.verifyTokenNotExpired).toBeDefined();
+    expect(fastify.twitchEbs.verifyRole).toBeDefined();
+    expect(fastify.twitchEbs.verifyChannelIdAndRole).toBeDefined();
+    expect(fastify.twitchEbs.verifyViewerOrBroadcaster).toBeDefined();
   });
 
   test('methods should respect "disabled" option', async () => {
