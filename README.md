@@ -22,7 +22,7 @@ Register as a plugin to get access to additional methods.
 Example below assumes Twitch token to be sent via request headers.
 
 ```js
-const fastify = require('fastify')
+const fastify = require('fastify');
 
 fastify.register(require('fastify-twitch-ebs-tools'), {
   secret: 'twitch shared secret',
@@ -53,9 +53,9 @@ fastify.listen(3000, (error) => {
 
 ## Options
 
-* `secret` - Twitch shared secret used to sign and verify JWTs (required). The plugin will throw an error if no secret is provided.
+* `secret` - Twitch shared secret used to sign and verify JWTs (required). The plugin will throw an error if no secret is provided. Required.
 
-* `disabled` - if `true`, all validation methods will return `true` Useful for temporarily disabling route authentication for debugging purposes. Does not affect `validateToken()` method. Optional, defaults to `false`
+* `disabled` - if `true`, all validation methods will return `true`. Useful for temporarily disabling route authentication for debugging purposes. Does not affect `validateToken()` method. Defaults to `false`. Optional.
 
 ## Usage
 
