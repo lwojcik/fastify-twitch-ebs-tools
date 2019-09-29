@@ -1,6 +1,6 @@
 {
   "name": "fastify-twitch-ebs-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fastify plugin that provides useful functions for Twitch Extension Backend Services (EBS)",
   "main": "index.js",
   "types": "index.d.ts",
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/lukemnet/fastify-twitch-ebs-tools",
   "dependencies": {
     "fastify-plugin": "1.6.0",
-    "twitch-ebs-tools": "1.0.0"
+    "twitch-ebs-tools": "1.0.1"
   },
   "devDependencies": {
     "@types/jest": "24.0.18",
