@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/jest": "25.1.0",
-    "@types/node": "13.5.1",
+    "@types/node": "13.5.2",
     "fastify": "2.11.0",
     "jest": "24.9.0",
     "prettier": "1.19.1",
