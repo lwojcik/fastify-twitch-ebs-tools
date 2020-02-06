@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/jest": "25.1.1",
     "@types/node": "13.7.0",
-    "fastify": "2.11.0",
+    "fastify": "2.12.0",
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "typescript": "3.6.3"
