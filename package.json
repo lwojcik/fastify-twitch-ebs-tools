@@ -1,6 +1,6 @@
 {
   "name": "fastify-twitch-ebs-tools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fastify plugin that provides useful functions for Twitch Extension Backend Services (EBS)",
   "main": "index.js",
   "types": "index.d.ts",
