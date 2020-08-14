@@ -9,3 +9,4 @@ appveyor.yml
 jest.config.js
 setupJest.ts
 .git
+.mergify.yml
