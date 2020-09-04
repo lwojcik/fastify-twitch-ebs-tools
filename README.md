@@ -6,7 +6,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/efe9c52ee3f2a67d2407/test_coverage)](https://codeclimate.com/github/lukemnet/fastify-twitch-ebs-tools/test_coverage)
 
 
-Fastify plugin providing useful functions for Twitch Extension Backend Services (EBS). Internally it uses [twitch-ebs-tools](https://github.com/lukemnet/twitch-ebs-tools).
+Fastify plugin providing utility functions for Twitch Extension Backend Services (EBS). Internally it uses [twitch-ebs-tools](https://github.com/lukemnet/twitch-ebs-tools).
 
 ## Installation
 
