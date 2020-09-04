@@ -1,5 +1,4 @@
-import * as fastify from "fastify";
-import { IncomingMessage, Server, ServerResponse } from "http";
+import { FastifyPlugin } from "fastify";
 import {
   TwitchPayload,
   TwitchChannelId,
@@ -26,22 +25,13 @@ declare module "fastify" {
     validatePermission(
       token: TwitchToken,
       channelId: TwitchChannelId,
-      roles: TwitchRole | TwitchRoles
+      roles: TwitchRole | TwitchRoles,
+      acceptExpired?: boolean,
     ): boolean;
-  }
-  interface FastifyInstance<
-    HttpServer = Server,
-    HttpRequest = IncomingMessage,
-    HttpResponse = ServerResponse
-  > {
-    twitchEbs: TwitchEbsTools;
   }
 }
 
-declare const fastifyTwitchEbsTools: fastify.Plugin<
-  Server,
-  IncomingMessage,
-  ServerResponse,
+declare const fastifyTwitchEbsTools: FastifyPlugin<
   { secret: string; disabled?: boolean }
 >;
 
