@@ -8,9 +8,9 @@ function fastifyTwitchEbs(fastify, options, next) {
   }
 
   const {
-    secret
+    secret,
+    disabled,
   } = options;
-  const disabled = options.disabled || false;
 
   /* istanbul ignore next - I don't know how to test this */
   function validateToken(token) {
@@ -47,9 +47,9 @@ function fastifyTwitchEbs(fastify, options, next) {
     return TwitchEbsTools.verifyViewerOrBroadcaster(payload);
   }
 
-  function validatePermission(token, channelId, roles) {
+  function validatePermission(token, channelId, roles, acceptExired = false) {
     if (disabled) return true;
-    return new TwitchEbsTools(secret).validatePermission(token, channelId, roles);
+    return new TwitchEbsTools(secret).validatePermission(token, channelId, roles, acceptExired);
   }
 
   fastify.decorate('twitchEbs', {
