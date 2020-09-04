@@ -52,3 +52,5 @@ dist/
 
 # generated docs
 docs/
+
+package-lock.json
