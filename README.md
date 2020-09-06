@@ -64,7 +64,7 @@ Available methods:
 
 * [`fastify.twitchEbs.validateToken(token)`](https://github.com/lukemnet/twitch-ebs-tools/blob/master/README.md#validatetokentoken)
 
-* [`fastify.twitchEbs.validatePermission(token, channelId, roles, acceptExipired?)`](https://github.com/lukemnet/twitch-ebs-tools/blob/master/README.md#validatepermissiontoken-channelid-roles-acceptexpired)
+* [`fastify.twitchEbs.validatePermission(token, channelId, roles, ignoreExpiration?)`](https://github.com/lukemnet/twitch-ebs-tools/blob/master/README.md#validatepermissiontoken-channelid-roles-ignoreExpiration)
 
 * [`fastify.twitchEbs.verifyChannelId(payload, channelId)`](https://github.com/lukemnet/twitch-ebs-tools#verifychannelidpayload-channelid)
 
