@@ -27,7 +27,7 @@
   "homepage": "https://github.com/lukemnet/fastify-twitch-ebs-tools",
   "dependencies": {
     "fastify-plugin": "^2.3.3",
-    "twitch-ebs-tools": "^1.1.0"
+    "twitch-ebs-tools": "^1.2.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.13",
