@@ -13,8 +13,8 @@ function fastifyTwitchEbs(fastify, options, next) {
   } = options;
 
   /* istanbul ignore next - I don't know how to test this */
-  function validateToken(token) {
-    return new TwitchEbsTools(secret).validateToken(token);
+  function validateToken(token, ignoreExpiration = false) {
+    return new TwitchEbsTools(secret).validateToken(token, ignoreExpiration);
   }
 
   function verifyChannelId(payload, channelId) {
@@ -47,9 +47,9 @@ function fastifyTwitchEbs(fastify, options, next) {
     return TwitchEbsTools.verifyViewerOrBroadcaster(payload);
   }
 
-  function validatePermission(token, channelId, roles, acceptExired = false) {
+  function validatePermission(token, channelId, roles, ignoreExpiration = false) {
     if (disabled) return true;
-    return new TwitchEbsTools(secret).validatePermission(token, channelId, roles, acceptExired);
+    return new TwitchEbsTools(secret).validatePermission(token, channelId, roles, ignoreExpiration);
   }
 
   fastify.decorate('twitchEbs', {
