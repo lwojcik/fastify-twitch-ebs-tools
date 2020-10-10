@@ -1,12 +1,14 @@
 src
 tsconfig.json
+tsconfig.eslint.json
 tslint.json
 .prettierrc
 tests
 coverage
-appveyor.yml
 .travis.yml
 jest.config.js
 setupJest.ts
 .git
 .mergify.yml
+.eslintrc
+.eslintignore
