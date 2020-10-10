@@ -2,8 +2,8 @@
   "name": "fastify-twitch-ebs-tools",
   "version": "1.2.1",
   "description": "Fastify plugin that provides utility functions for Twitch Extension Backend Services (EBS)",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "clearTestCache": "jest --clearCache",
