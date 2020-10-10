@@ -10,5 +10,8 @@ jest.config.js
 setupJest.ts
 .git
 .mergify.yml
+AUTHORS
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
 .eslintrc
 .eslintignore
