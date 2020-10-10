@@ -101,7 +101,7 @@ Before contributing be sure to read [Contributing Guidelines](https://github.com
 
 To all who contribute code, improve documentation, submit issues or feature requests - thank you for making Fastify-twitch-ebs-tools even better!
 
-We maintain an [AUTHORS](https://github.com/lukemnet/twitch-ebs-tools/blob/master/AUTHORS) file where we keep a list of all project contributors. Please consider adding your name there with your next PR.
+We maintain an [AUTHORS](https://github.com/lukemnet/fastify-twitch-ebs-tools/blob/master/AUTHORS) file where we keep a list of all project contributors. Please consider adding your name there with your next PR.
 
 ## License
 
