@@ -1,7 +1,7 @@
 # fastify-twitch-ebs-tools
 
 [![npm (latest)](https://img.shields.io/npm/v/fastify-twitch-ebs-tools/latest.svg)](https://www.npmjs.com/package/fastify-twitch-ebs-tools)
-[![Travis Build Status](https://travis-ci.org/lukemnet/fastify-twitch-ebs-tools.svg?branch=master)](https://travis-ci.org/lukemnet/fastify-twitch-ebs-tools)
+[![Travis Build Status](https://travis-ci.com/lukemnet/fastify-twitch-ebs-tools.svg?branch=master)](https://travis-ci.com/lukemnet/fastify-twitch-ebs-tools)
 [![Maintainability](https://api.codeclimate.com/v1/badges/efe9c52ee3f2a67d2407/maintainability)](https://codeclimate.com/github/lukemnet/fastify-twitch-ebs-tools/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/efe9c52ee3f2a67d2407/test_coverage)](https://codeclimate.com/github/lukemnet/fastify-twitch-ebs-tools/test_coverage)
 
