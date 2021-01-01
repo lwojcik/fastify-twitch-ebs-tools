@@ -1,10 +1,8 @@
 # fastify-twitch-ebs-tools
 
 [![npm (latest)](https://img.shields.io/npm/v/fastify-twitch-ebs-tools/latest.svg)](https://www.npmjs.com/package/fastify-twitch-ebs-tools)
-[![Travis Build Status](https://travis-ci.com/lukemnet/fastify-twitch-ebs-tools.svg?branch=master)](https://travis-ci.com/lukemnet/fastify-twitch-ebs-tools)
-[![Maintainability](https://api.codeclimate.com/v1/badges/efe9c52ee3f2a67d2407/maintainability)](https://codeclimate.com/github/lukemnet/fastify-twitch-ebs-tools/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/efe9c52ee3f2a67d2407/test_coverage)](https://codeclimate.com/github/lukemnet/fastify-twitch-ebs-tools/test_coverage)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/1tas9uha1vcqi3eu/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/fastify-twitch-ebs-tools/branch/master)
+[![codecov](https://codecov.io/gh/lukemnet/fastify-twitch-ebs-tools/branch/master/graph/badge.svg?token=ApXnDQMLjh)](https://codecov.io/gh/lukemnet/fastify-twitch-ebs-tools)
 
 Fastify plugin providing utility functions for Twitch Extension Backend Services (EBS). Internally it uses [twitch-ebs-tools](https://github.com/lukemnet/twitch-ebs-tools).
 
