@@ -1,6 +1,7 @@
 import { FastifyPluginCallback } from 'fastify';
 import fp from 'fastify-plugin';
-import TwitchEbsTools, {
+import {
+  TwitchEbsTools,
   TwitchToken,
   TwitchPayload,
   TwitchChannelId,
@@ -39,7 +40,7 @@ declare module 'fastify' {
   }
 }
 
-const fastifyTwitchEbsTools: FastifyPluginCallback<TwitchEbsOptions> = (fastify, options, next) => {
+const fastifyTwitchEbsToolsPlugin: FastifyPluginCallback<TwitchEbsOptions> = (fastify, options, next) => {
   /* istanbul ignore next - I don't know how to test this */
   if (!options.secret) {
     throw new Error('Fastify Twitch EBS Tools: Missing JWT secret');
@@ -115,4 +116,4 @@ const fastifyTwitchEbsTools: FastifyPluginCallback<TwitchEbsOptions> = (fastify,
   next();
 };
 
-export default fp(fastifyTwitchEbsTools, '3.x');
+export const fastifyTwitchEbsTools = fp(fastifyTwitchEbsToolsPlugin, '3.x');

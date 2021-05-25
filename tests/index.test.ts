@@ -1,7 +1,7 @@
 import Fastify from 'fastify';
-import TwitchEbsTools from 'twitch-ebs-tools';
+import { TwitchEbsTools } from 'twitch-ebs-tools';
 import jwt from 'jsonwebtoken';
-import fastifyTwitchEbsTools from '../src/index';
+import { fastifyTwitchEbsTools } from '../src/index';
 
 describe('fastify-twitch-ebs-tools', () => {
   it('should register successfully', () => {
