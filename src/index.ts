@@ -40,7 +40,11 @@ declare module 'fastify' {
   }
 }
 
-const fastifyTwitchEbsToolsPlugin: FastifyPluginCallback<TwitchEbsOptions> = (fastify, options, next) => {
+const fastifyTwitchEbsToolsPlugin: FastifyPluginCallback<TwitchEbsOptions> = (
+  fastify,
+  options,
+  next,
+) => {
   /* istanbul ignore next - I don't know how to test this */
   if (!options.secret) {
     throw new Error('Fastify Twitch EBS Tools: Missing JWT secret');
