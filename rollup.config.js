@@ -26,15 +26,7 @@ export default [
           'fastify-plugin': 'fastify-plugin',
           'twitch-ebs-tools': 'twitch-ebs-tools',
         },
-      },
-      {
-        file: `${name}.mjs`,
-        format: 'es',
-        globals: {
-          fastify: 'fastify',
-          'fastify-plugin': 'fastify-plugin',
-          'twitch-ebs-tools': 'twitch-ebs-tools',
-        },
+        exports: 'auto',
       },
     ],
     context: 'this',
