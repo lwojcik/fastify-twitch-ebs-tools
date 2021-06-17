@@ -16,3 +16,4 @@ CONTRIBUTING.md
 .eslintrc
 .eslintignore
 rollup.config.js
+appveyor.yml
