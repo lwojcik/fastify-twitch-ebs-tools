@@ -8,7 +8,7 @@ install:
 build_script:
   - npm run build
 
-	test_script:
+test_script:
   - curl https://keybase.io/codecovsecurity/pgp_keys.asc | gpg --no-default-keyring --keyring trustedkeys.gpg --import > /dev/null
   - curl -Os https://uploader.codecov.io/latest/linux/codecov > /dev/null
   - curl -Os https://uploader.codecov.io/latest/linux/codecov.SHA256SUM > /dev/null
