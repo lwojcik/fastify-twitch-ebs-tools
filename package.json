@@ -13,7 +13,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint . --ext .ts",
     "compile": "rollup -c",
-    "build": "npm run lint && npm run test && npm run clean && npm run compile",
+    "build": "npm run lint && npm run test:cov && npm run clean && npm run compile",
     "dev": "tsc -w --project tsconfig.json",
     "prepublishOnly": "npm run build"
   },
