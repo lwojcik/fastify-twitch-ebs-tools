@@ -120,4 +120,4 @@ const fastifyTwitchEbsToolsPlugin: FastifyPluginCallback<TwitchEbsOptions> = (
   next();
 };
 
-export default fp(fastifyTwitchEbsToolsPlugin, '3.x');
+export default fp(fastifyTwitchEbsToolsPlugin);
