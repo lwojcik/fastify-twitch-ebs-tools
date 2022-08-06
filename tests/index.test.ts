@@ -1,3 +1,4 @@
+/* eslint-disable jest/max-expects */
 import Fastify from 'fastify';
 import { TwitchEbsTools } from 'twitch-ebs-tools';
 import jwt from 'jsonwebtoken';
