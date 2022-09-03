@@ -41,7 +41,7 @@
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
-    "esbuild": "^0.14.10",
+    "esbuild": "^0.15.2",
     "eslint": "^8.6.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.25.3",
