@@ -36,7 +36,7 @@
     "twitch-ebs-tools": "^2.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^28.1.0",
+    "@types/jest": "^29.0.0",
     "@types/jsonwebtoken": "^8.5.6",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
@@ -45,7 +45,7 @@
     "eslint": "^8.6.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-jest": "^27.0.1",
     "jest": "^29.0.1",
     "jsonwebtoken": "^8.5.1",
     "rimraf": "^3.0.2",
