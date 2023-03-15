@@ -1,7 +1,8 @@
 # fastify-twitch-ebs-tools
 
 > **As of 15 March 2023 this project is no longer updated or maintained.**
-> Fastify plugin providing utility functions for Twitch Extension Backend Services (EBS).
+
+Fastify plugin providing utility functions for Twitch Extension Backend Services (EBS).
 
 ## Install
 
